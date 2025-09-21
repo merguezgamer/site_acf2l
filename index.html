@@ -6,11 +6,11 @@
     <title>ACF2L - Aéroclub de Frotey Les Lures</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- Topbar -->
-	<div class="bg-primary text-white py-1">
+	<div class=" text-white py-1 fond_bleu">
 		<div class="container-fluid row">
 			<div class="col col-md-6 justify-content-between">
 
@@ -51,68 +51,80 @@
 	
      <nav class="navbar navbar-expand-lg bg-dark sticky-top">
         <div class="container-fluid">
-				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo assos" /></a>
+				<a class="navbar-brand" href="#">
+					<img src="images/logo2.png" class="img-fluid bg-white" alt="logo assos" style="height: 40px;">
+				</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav items-center ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="btn btn-outline-primary me-2" aria-current="page" href="#">Acceuil</a>
+                <a class="btn fond_bleu me-2" aria-current="page" href="#">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                <a class="btn btn-outline-primary me-2" href="#">Nos activités</a>
+                <a class="btn fond_bleu me-2" href="html/activité.html">Nos activités</a>
                 </li>
                 <li class="nav-item">
-                <a class="btn btn-outline-primary me-2" href="#">Tarif</a>
+                <a class="btn fond_bleu me-2" href="html/location.html">Tarif</a>
                 </li>
 				<li class="nav-item">
-                <a class="btn btn-outline-primary me-2" href="#">Information</a>
+                <a class="btn fond_bleu me-2" href="html/information.html">Information</a>
                 </li>
                 <li class="nav-item">
-                <a class="btn btn-outline-primary me-2" aria-disabled="true" href="html/contact.html">contact</a>
+                <a class="btn fond_bleu me-2" href="html/contact.html">contact</a>
                 </li>
             </ul>
             </div>
         </div>
         </nav>
 
-        <!-- navbar Section fin -->
-		<!-- Carousel -->
-	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-			<img src="images/emotionheader_7.jpg" class="d-block w-100" style="max-height: 100vh;" alt="...">
-			</div>
-			<div class="carousel-item">
-			<img src="images/emotionheader_6.JPG" class="d-block w-100" style="max-height: 100vh;" alt="..."> 
-			</div>
-			<div class="carousel-item">
-			<img src="images/course-9.JPG" class="d-block w-100" style="max-height: 100vh;" alt="..."> 
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-		</div>
-    <!-- Carousel fin -->
+    <!-- navbar Section fin -->
+	
+	<!-- Section bienvenue avec image de fond -->
+	<section class="d-flex align-items-center justify-content-center" style="min-height: 100vh; background: url('images/boeing-stearman-au-coucher-du-soleil.avif') center center/cover no-repeat;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center text-white" style="background: rgba(0,0,0,0.5); border-radius: 1rem;">
+            <div class="col-md-8 text-center m-5">
+                <h2 class="mb-3">Bienvenue sur le site de ACF2L</h2>
+                <p>
+					Découvrez les service que l'on propose en cliquant sur le bouton ci-dessous.
+                </p>
+                <a href="#contenue" class="btn fond_bleu mt-3">
+                    en savoir plus
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 	<!--Section activités debut-->
-	<div class="container my-4">
+	<div id="contenue" class="container my-4 pt-5">
 		<div class="row g-4">
 			
+			<!--carte gauche-->
 			<div class="col-md-4">
 			<div class="card h-100 d-flex flex-column">
 				<img src="images/b.jpg" class="card-img-top" alt="Vol de loisir">
 				<div class="card-body d-flex flex-column">
-				<h5 class="card-title p-3 bg-success border border-success border-start-0 rounded-end">Location ULM</h5>
+				<h5 class="card-title p-3 fond_vert border border-start-0 rounded-end">Location ULM</h5>
 				<p class="card-text">Découvrez le plaisir du vol en ULM avec nos instructeurs expérimentés. Que vous soyez débutant ou pilote confirmé, nous avons des options pour tous les niveaux.</p>
 				<div class="text-end mt-auto">
-					<a class="btn btn-primary">
+					<a class="btn fond_bleu " href="html/location.html">
+					En savoir plus <i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+				</div>
+			</div>
+			</div>
+			<!--carte milieu-->
+			<div class="col-md-4">
+			<div class="card h-100 d-flex flex-column">
+				<img src="images/troisAutogires.jpg" class="card-img-top" alt="troisAutogires">
+				<div class="card-body d-flex flex-column">
+				<h5 class="card-title p-3 fond_bleu border border-start-0 rounded-end">Baptême de l’air</h5>
+				<p class="card-text">Découvrez les services et activitées proposer par notre association.</p>
+				<div class="text-end mt-auto">
+					<a class="btn fond_bleu" href="html/activité.html">
 					En savoir plus <i class="bi bi-arrow-right"></i>
 					</a>
 				</div>
@@ -120,29 +132,15 @@
 			</div>
 			</div>
 
+			<!--carte droite-->
 			<div class="col-md-4">
 			<div class="card h-100 d-flex flex-column">
-				<img src="images/troisAutogires.jpg" class="card-img-top" alt="Baptême de l’air">
+				<img src="images/slide-3.jpg" class="card-img-top" alt="apareil">
 				<div class="card-body d-flex flex-column">
-				<h5 class="card-title p-3 bg-primary border border-primary border-start-0 rounded-end">Baptême de l’air</h5>
-				<p class="card-text">Vivez une expérience inoubliable lors d’un baptême de l’air en ULM et profitez d’une vue imprenable sur la région.</p>
+				<h5 class="card-title p-3 fond_rouge border border-start-0 rounded-end">Nos appareil</h5>
+				<p class="card-text">Découvrez nos appareils</p>
 				<div class="text-end mt-auto">
-					<a class="btn btn-primary" href="html/location.html">
-					En savoir plus <i class="bi bi-arrow-right"></i>
-					</a>
-				</div>
-				</div>
-			</div>
-			</div>
-
-			<div class="col-md-4">
-			<div class="card h-100 d-flex flex-column">
-				<img src="images/slide-3.jpg" class="card-img-top" alt="Cours de pilotage">
-				<div class="card-body d-flex flex-column">
-				<h5 class="card-title p-3 bg-danger border border-danger border-start-0 rounded-end">Cours de pilotage</h5>
-				<p class="card-text">Apprenez à piloter un ULM avec nos formations adaptées à votre niveau et progressez à votre rythme.</p>
-				<div class="text-end mt-auto">
-					<a class="btn btn-primary">
+					<a class="btn fond_bleu" href="html/information.html">
 					En savoir plus <i class="bi bi-arrow-right"></i>
 					</a>
 				</div>
@@ -172,8 +170,9 @@
         <p class="mb-0"> 2024 ACF2L - Aéroclub de Frotey Les Lures. Tous droits réservés.</p>
     </div>
 </footer>
-</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <!-- icone boostrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</body>
 </html>

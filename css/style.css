@@ -1,0 +1,16 @@
+.fond_bleu {
+    background-color: rgba(25, 118, 210, 1);
+    
+}
+.fond_bleu:hover {
+        background-color: rgba(21, 101, 192, 1);
+}
+
+.fond_vert {
+    background-color: rgba(164, 207, 39, 1);
+    
+}
+
+.fond_rouge {
+    background-color: rgba(255, 74, 17, 1);    
+}
